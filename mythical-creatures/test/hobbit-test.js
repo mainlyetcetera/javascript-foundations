@@ -13,13 +13,13 @@ describe('Hobbit', function() {
     assert.instanceOf(hobbit, Hobbit);
   });
 
-  it.skip('should have a name', function() {
+  it('should have a name', function() {
     var bilbo = new Hobbit('Bilbo');
 
     assert.equal(bilbo.name, 'Bilbo');
   });
 
-  it.skip('should be able to have a different name', function() {
+  it('should be able to have a different name', function() {
     // create a variable hobbit whose value is an instance of the Hobbit class (pass in your name as an argument)
 
     // assert that hobbit.name is equal to your name
