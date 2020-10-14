@@ -26,7 +26,7 @@ describe('Hobbit', function() {
     assert.equal(newHobbit.name, 'NERD');
   });
 
-  it.skip('should start out 0 years old', function() {
+  it('should start out 0 years old', function() {
     // create a variable hobbit whose value is an instance of the Hobbit class (pass in whatever name you want)
 
     // assert that hobbit.age is 0
