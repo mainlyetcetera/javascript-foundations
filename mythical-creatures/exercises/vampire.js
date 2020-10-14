@@ -4,6 +4,11 @@ class Vampire {
     pet === undefined ? this.pet = 'bat' : this.pet = pet;
     this.thirsty = true;
   }
+
+  drink() {
+    this.thirsty = false;
+  }
+
 }
 
 module.exports = Vampire;
