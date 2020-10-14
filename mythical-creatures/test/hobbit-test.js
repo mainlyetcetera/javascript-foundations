@@ -21,8 +21,9 @@ describe('Hobbit', function() {
 
   it('should be able to have a different name', function() {
     // create a variable hobbit whose value is an instance of the Hobbit class (pass in your name as an argument)
-
+    var newHobbit = new Hobbit('NERD');
     // assert that hobbit.name is equal to your name
+    assert.equal(newHobbit.name, 'NERD');
   });
 
   it.skip('should start out 0 years old', function() {
