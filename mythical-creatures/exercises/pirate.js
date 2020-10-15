@@ -4,6 +4,11 @@ class Pirate {
     job === undefined ? this.job = 'scallywag' : this.job = job;
     this.cursed = false;
   }
+
+  robShip() {
+    return 'YAARRR!';
+  }
+
 }
 
 module.exports = Pirate;
