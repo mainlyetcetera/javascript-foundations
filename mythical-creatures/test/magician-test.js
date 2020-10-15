@@ -16,13 +16,13 @@ describe('Magician', function() {
     assert.equal(magician2.name, 'Casey');
   });
 
-  it.skip('should have a top hat by default', function() {
+  it('should have a top hat by default', function() {
     var magician = new Magician({ name: 'Scott' });
 
     assert.equal(magician.topHat, true);
   });
 
-  it.skip('should not always have a hat', function() {
+  it('should not always have a hat', function() {
     var magician = new Magician({ name: 'Casey', topHat: false });
 
     assert.equal(magician.topHat, false)
