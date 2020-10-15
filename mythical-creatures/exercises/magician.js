@@ -1,6 +1,8 @@
 class Magician {
-  constructor(name) {
-    name !== undefined ? this.name = name.name : this.name;
+  constructor(magician) {
+    !magician ? this.topHat = true
+      : magician.topHat === undefined ? (this.name = magician.name, this.topHat = true)
+      : (this.name = magician.name, this.topHat = magician.topHat)
   }
 }
 
