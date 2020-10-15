@@ -3,7 +3,7 @@ var Magician = require('../exercises/magician');
 
 describe('Magician', function() {
 
-  it.skip('should be a function that instantiates a class', function() {
+  it('should be a function that instantiates a class', function() {
     assert.isFunction(Magician);
     assert.instanceOf(new Magician(), Magician);
   });
