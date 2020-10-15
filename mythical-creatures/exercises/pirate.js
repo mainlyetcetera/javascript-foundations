@@ -3,6 +3,7 @@ class Pirate {
     this.name = name;
     job === undefined ? this.job = 'scallywag' : this.job = job;
     this.cursed = false;
+    this.booty = 0;
   }
 
   robShip() {
