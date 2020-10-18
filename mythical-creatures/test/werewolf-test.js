@@ -28,7 +28,7 @@ describe('Werewolf', function() {
     assert.equal(werewolf.human, true);
   });
 
-  it.skip('should not be in human form after transforming', function() {
+  it('should not be in human form after transforming', function() {
     var werewolf = new Werewolf('Scott');
 
     werewolf.transform();
