@@ -16,6 +16,10 @@ class Magician {
     return this.topHat ? 'PULL RABBIT FROM TOP HAT' : 'PULL DOVE FROM SLEEVE';
   }
 
+  performShowStopper() {
+    return this.confident ? 'WOW! The magician totally just sawed that person in half!' : 'Oh no! Practice more before attempting this trick!';
+  }
+
 }
 
 module.exports = Magician;
