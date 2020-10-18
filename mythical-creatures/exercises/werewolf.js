@@ -8,6 +8,7 @@ class Werewolf {
 
   transform() {
     this.human ? (this.human = false, this.wolf = true) : (this.human = true, this.wolf = false);
+    this.wolf ? this.hungry = true : this.hungry = false;
   }
 
 }
