@@ -90,8 +90,16 @@ describe('Werewolf', function() {
     assert.equal(ate, 'The dragons are right. Humans DO taste good with ketchup! :P')
   });
 
-  it.skip('should not be hungry after changing back to human form', function() {
+  it('should not be hungry after changing back to human form', function() {
+    var werewolf = new Werewolf('Kayla');
 
+    assert.equal(werewolf.hungry, false);
+
+    transform();
+    assert.equal(werewolf.hungry, true);
+
+    transform();
+    assert.equal(werewolf.hungry, false);
   });
 
   it.skip('should transform back to human form after eating', function() {
