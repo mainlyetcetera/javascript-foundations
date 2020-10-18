@@ -23,9 +23,7 @@ describe('Medusa', function() {
     // assert that the first medusa's name is your name
     // assert that the second medusa's name is the other name
     assert.equal(medusa1.name, 'NERD');
-    console.log(medusa1.name);
-    assert.equal(medusa2.name, 'Agatha');
-    console.log(medusa2.name);
+    assert.equal(medusa2.name, 'Agatha');    
   });
 
   it.skip('should start with no statues', function() {
