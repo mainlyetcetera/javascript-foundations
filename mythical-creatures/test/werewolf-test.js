@@ -14,7 +14,7 @@ describe('Werewolf', function() {
     assert.instanceOf(larry, Werewolf);
   });
 
-  it.skip('should have a name', function() {
+  it('should have a name', function() {
     var werewolf = new Werewolf('Jeff');
     var werewolf2 = new Werewolf('Sal');
 
@@ -100,7 +100,7 @@ describe('Victim', function() {
     assert.instanceOf(victim, Victim);
   });
 
-  it.skip('should have a name', function() {
+  it('should have a name', function() {
     var victim = new Victim('Leta');
 
     assert.equal(victim.name, 'Leta');
