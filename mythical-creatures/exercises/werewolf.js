@@ -11,6 +11,10 @@ class Werewolf {
     this.wolf ? this.hungry = true : this.hungry = false;
   }
 
+  consume(victim) {
+    return !this.hungry ? 'I couldn\'t possibly eat another human!' : 'The dragons are right. Humans DO taste good with ketchup! :P';
+  }
+
 }
 
 module.exports = Werewolf;
