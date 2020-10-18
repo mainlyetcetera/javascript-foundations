@@ -23,10 +23,10 @@ describe('Medusa', function() {
     // assert that the first medusa's name is your name
     // assert that the second medusa's name is the other name
     assert.equal(medusa1.name, 'NERD');
-    assert.equal(medusa2.name, 'Agatha');    
+    assert.equal(medusa2.name, 'Agatha');
   });
 
-  it.skip('should start with no statues', function() {
+  it('should start with no statues', function() {
     var medusa = new Medusa('Amy');
 
     assert.deepEqual(medusa.statues, []);
