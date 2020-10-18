@@ -63,8 +63,10 @@ describe('Werewolf', function() {
     assert.equal(werewolf.human, false);
   });
 
-  it.skip('should start off not hungry', function() {
-    // your code here
+  it('should start off not hungry', function() {
+    var werewolf = new Werewolf('Greymane');
+
+    assert.equal(werewolf.hungry, false);
   });
 
   it.skip('should become hungry after changing into werewolf form', function() {
