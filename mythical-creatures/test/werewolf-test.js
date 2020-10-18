@@ -95,10 +95,10 @@ describe('Werewolf', function() {
 
     assert.equal(werewolf.hungry, false);
 
-    transform();
+    werewolf.transform();
     assert.equal(werewolf.hungry, true);
 
-    transform();
+    werewolf.transform();
     assert.equal(werewolf.hungry, false);
   });
 
