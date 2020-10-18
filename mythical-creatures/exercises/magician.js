@@ -10,6 +10,10 @@ class Magician {
     return `${spellName.toUpperCase()}!`;
   }
 
+  cast() {
+    return this.topHat ? 'PULL RABBIT FROM TOP HAT' : 'PULL DOVE FROM SLEEVE'
+  }
+
 }
 
 module.exports = Magician;
