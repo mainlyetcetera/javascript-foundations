@@ -69,7 +69,7 @@ describe('Medusa', function() {
     assert.equal(medusa.statues.length, 3);
   });
 
-  it.skip('should let the first victim go free when stoning the 4th', function() {
+  it('should let the first victim go free when stoning the 4th', function() {
     var medusa = new Medusa('Hannah');
     var victim1 = new Person('Pam');
     var victim2 = new Person('Khalid');
