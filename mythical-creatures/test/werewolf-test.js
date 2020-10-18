@@ -4,11 +4,11 @@ var Victim = require('../exercises/victim');
 
 describe('Werewolf', function() {
 
-  it.skip('should be a function', function() {
+  it('should be a function', function() {
     assert.isFunction(Werewolf);
   });
 
-  it.skip('should instantiate our good friend, Werewolf', function() {
+  it('should instantiate our good friend, Werewolf', function() {
     var larry = new Werewolf();
 
     assert.instanceOf(larry, Werewolf);
@@ -90,11 +90,11 @@ describe('Werewolf', function() {
 
 describe('Victim', function() {
 
-  it.skip('should be a function', function() {
+  it('should be a function', function() {
     assert.isFunction(Victim);
   });
 
-  it.skip('should instantiate our good friend, Victim', function() {
+  it('should instantiate our good friend, Victim', function() {
     var victim = new Victim();
 
     assert.instanceOf(victim, Victim);
