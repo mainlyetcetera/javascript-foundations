@@ -45,7 +45,7 @@ describe('Medusa', function() {
     assert.equal(medusa.statues[0].name, 'Robbie');
   });
 
-  it.skip('should stone the victim when added to the statues array', function() {
+  it('should stone the victim when added to the statues array', function() {
     var medusa = new Medusa('Eric');
     var victim = new Person('Robbie');
 
