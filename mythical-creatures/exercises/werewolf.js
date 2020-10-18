@@ -3,10 +3,11 @@ class Werewolf {
     this.name = name;
     this.human = true;
     this.wolf = false;
+    this.hungry = false;
   }
 
   transform() {
-    this.human ? (this.human = false, this.wolf = true) : (this.human = true, this.wolf = false);    
+    this.human ? (this.human = false, this.wolf = true) : (this.human = true, this.wolf = false);
   }
 
 }
