@@ -110,11 +110,25 @@ describe('Werewolf', function() {
     assert.equal(werewolf.wolf, true);
 
     werewolf.consume(victim);
-    assert.equal(werewolf.human, true);    
+    assert.equal(werewolf.human, true);
   });
 
-  it.skip('should not be able to eat a victim while in human form', function() {
-    // your code here
+  it('should not be able to eat a victim while in human form', function() {
+    var werewolf = new Werewolf('Drew');
+    var victim = new Victim('Alice');
+
+    var triedToEat = werewolf.consume(victim);
+    assert.equal(triedToEat, "I couldn't possibly eat another human!");
+
+    werewolf.transform();
+    assert.equal(werewolf.wolf, true);
+    var ate = werewolf.consume(victim);
+    assert.equal(ate, "The dragons are right. Humans DO taste good with ketchup! :P");
+    assert.equal(werewolf.human, true);
+    assert.equal(werewolf.wolf, false);
+
+    var triedToEatAgain = werewolf.consume(victim);
+    assert.equal(triedToEatAgain, "I couldn't possibly eat another human!");
   });
 });
 
