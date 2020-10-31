@@ -4,7 +4,6 @@ var Magician = require('../exercises/magician');
 describe('Magician', function() {
 
   it('should be a function that instantiates a class', function() {
-    assert.isFunction(Magician);
     assert.instanceOf(new Magician(), Magician);
   });
 
@@ -24,7 +23,10 @@ describe('Magician', function() {
 
   it('should not always have a hat', function() {
     var magician = new Magician({ name: 'Casey', topHat: false });
-
+    console.log(magician.topHat);
+    console.log(magician);
+    // console.log(magician.name);
+    // console.log(magician.topHat);
     assert.equal(magician.topHat, false)
   });
 
