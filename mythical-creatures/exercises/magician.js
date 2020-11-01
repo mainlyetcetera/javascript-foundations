@@ -1,25 +1,45 @@
 class Magician {
   constructor(magician) {
-    // magician.topHat ? this.topHat = magician.topHat : this.topHat = true;
-    !magician || magician.topHat ? this.topHat = true
-      : magician.topHat === undefined ? (this.name = magician.name, this.topHat = true)
-      : (this.name = magician.name, this.topHat = magician.topHat, this.confident = false, this.spellCast = 0)
+    magician = magician || {};
+
+    if (magician.topHat === undefined) {
+      magician.topHat = true;
+    } else {
+      magician.topHat;
+    }
+
+    this.name = magician.name;
+    this.topHat = magician.topHat;
+    this.confident = false;
+    this.experience = 0;
   }
 
   incantation(spellName) {
     return `${spellName.toUpperCase()}!`;
   }
 
-  cast() {
-    this.spellCast++;
-    this.spellCast >= 3 ? this.confident = true : this.confident;
-    return this.topHat ? 'PULL RABBIT FROM TOP HAT' : 'PULL DOVE FROM SLEEVE';
+  cast() {    
+    this.experience++;
+    if (this.experience > 2) {
+      this.confident = true;
+    }
+
+    if (this.topHat) {
+      return 'PULL RABBIT FROM TOP HAT';
+    } else {
+      return 'PULL DOVE FROM SLEEVE';
+    }
   }
 
   performShowStopper() {
-    return this.confident ? 'WOW! The magician totally just sawed that person in half!' : 'Oh no! Practice more before attempting this trick!';
+    if (this.confident) {
+      return 'WOW! The magician totally just sawed that person in half!'
+    } else {
+      return 'Oh no! Practice more before attempting this trick!';
+    }
   }
 
 }
+
 
 module.exports = Magician;
